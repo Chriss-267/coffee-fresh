@@ -37,7 +37,7 @@ export default function Resumen() {
       onSubmit={handleSubmit}>
           <div className='mt-5'>
             <input type="submit" className={`${comprobarPedido() ? "bg-indigo-100" : " bg-indigo-600 hover:bg-indigo-800"} px-5 py-2 rounded font-bold text-white text-center w-full cursor-pointer`}
-            disabled = {comprobarPedido}
+            disabled = {comprobarPedido()}
             value= "Confirmar Pedido"/>
           </div>
       </form>
